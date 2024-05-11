@@ -1,0 +1,32 @@
+.Header {
+  position: sticky;
+  height: 10dvh;
+  width: 100%;
+  display: flex;
+  /* border-bottom: 2px solid #ccc; */
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 5rem;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.Header__Left {
+  display: flex;
+  gap: 2rem;
+}
+
+.Header__Logo h1 {
+  font-size: 2rem;
+  /* font-weight: bolder; */
+}
+
+.Header__Menu {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.Header__Menu * {
+  padding: 0.6rem 1rem;
+  /* background: #000; */
+  border-radius: 0.5rem;
+}

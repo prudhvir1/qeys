@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.ShareNote {
+  position: absolute;
+  width: 100dvw;
+  height: 90dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ShareNote__Background {
+  position: absolute;
+  height: 70rem;
+  width: 100%;
+  z-index: 99;
+  background: rgba(25, 25, 25, 0.95);
+  backdrop-filter: blur(5px);
+}
+
+.ShareNote__Container {
+  position: absolute;
+  width: 60rem;
+  height: 27rem;
+  z-index: 100;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10dvh;
+  overflow-y: auto;
+}
+
+.ShareNote__Canvas__Container {
+  width: 25rem;
+  height: 25rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-shadow: -5px 5px 10px rgb(0, 0, 0);
+}
+
+.ShareNote__Canvas__Border {
+  border: 2rem solid white;
+  border-bottom: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ShareNote__Canvas {
+  background: #181818;
+  width: 25rem;
+  min-height: 25rem;
+}
+
+.ShareNote__Canvas__Header {
+  width: 100%;
+  min-height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  padding: 2rem 3rem 0rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.ShareNote__Canvas__Body {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  min-height: 18rem;
+  padding: 2rem 3rem;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  white-space: pre-line;
+}
+
+.ShareNote__Canvas__Footer {
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.5rem;
+  color: rgb(19, 19, 19);
+  background: white;
+  margin-top: -1rem;
+  padding-bottom: 1.5rem;
+}
+
+.ShareNote__Options {
+  width: 30rem;
+  padding: 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.ShareNote__Options__Buttons {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.ShareNote__Options button {
+  background: #444;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5rem;
+  overflow: hidden;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.ShareNote__Options button:hover {
+  transform: scale(1.1);
+}
+
+.ShareNote--Close {
+  width: 5rem;
+  min-height: 25rem;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 900px) {
+  .ShareNote__Container {
+    /* position: absolute; */
+    width: 90dvw;
+    height: 100%;
+    z-index: 100;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .ShareNote__Canvas__Container {
+    width: 80dvw;
+    height: 27rem;
+    overflow: auto;
+  }
+
+  .ShareNote__Options__Buttons {
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* gap: 1rem; */
+    font-size: 0.5rem;
+  }
+
+  .ShareNote--Close {
+    min-height: 3rem;
+  }
+}

@@ -1,0 +1,72 @@
+.Hero {
+  width: 100vw;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.Hero__Container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Hero__Container input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  padding: 1rem 1rem;
+  margin: 2rem 0rem;
+  border-bottom: 2px solid yellow;
+  border-radius: 1rem;
+  font-weight: bold;
+}
+
+.Hero__Container button {
+  width: 100%;
+  text-align: center;
+}
+
+.btn {
+  background: #0c7eff;
+  padding: 0.4rem 0rem;
+  border-radius: 0.5rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .Hero__Container {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Hero__Container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Hero__Container input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    padding: 1rem 1rem;
+    margin: 2rem 0rem;
+    border-bottom: 2px solid yellow;
+    border-radius: 1rem;
+    font-weight: bold;
+  }
+
+  .Hero__Container button {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.NoteContainer {
+  width: 16rem;
+  height: 12rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.NoteContainer__Header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.NoteContainer__Header__Title {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0rem 1.5rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.NoteContainer__Header__Date {
+  /* background: red; */
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 0rem 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-wrap: wrap;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+}
+
+.NoteContainer__Header__Date p {
+  text-shadow: -1px 1px 2px #000000;
+}
+
+.NoteContainer__Main {
+  height: 100%;
+  width: 100%;
+  padding: 0rem 1.5rem 0rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+}
+
+.NoteContainer__Main p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.NoteContainer__Footer {
+  height: 5rem;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.697);
+}
+
+.NoteContainer__Footer__btns {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.NoteContainer__Footer__btn1,
+.NoteContainer__Footer__btn2,
+.NoteContainer__Footer__btn3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  transition: font-size 0.1s ease-in-out;
+}
+
+.NoteContainer__Footer__btn1:hover,
+.NoteContainer__Footer__btn2:hover,
+.NoteContainer__Footer__btn3:hover {
+  background: #00000050;
+  font-size: 1.3rem;
+}

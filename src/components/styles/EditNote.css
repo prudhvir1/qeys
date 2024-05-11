@@ -1,0 +1,124 @@
+.EditNote {
+  position: absolute;
+  width: 100%;
+  height: 90dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.EditNote__Background {
+  position: absolute;
+  height: 70rem;
+  width: 100%;
+  z-index: 99;
+  background: rgba(25, 25, 25, 0.95);
+  backdrop-filter: blur(5px);
+}
+
+.EditNote__Container {
+  position: absolute;
+  z-index: 100;
+  background: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 1.5rem;
+  margin-top: -10dvh;
+  padding: 1.5rem;
+}
+
+.EditNote__Container__Header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0rem 1.5rem 1rem;
+}
+
+.EditNote__Options {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 2.5rem;
+}
+
+.EditNote__Text,
+.EditNote__Title {
+  width: 45dvw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 2px solid;
+  border-color: transparent;
+}
+
+.EditNote__Title {
+  width: 35dvw;
+}
+
+.EditNote__Title input {
+  width: 30dvw;
+  background: #111;
+  font-size: 1.5rem;
+}
+
+.EditNote__Text textarea {
+  width: 45dvw;
+  height: 40dvh;
+  background: #111;
+  resize: none;
+}
+
+.EditNote__Title--noError,
+.EditNote__Text--noError {
+  display: none;
+  align-items: center;
+  position: relative;
+  color: rgb(255, 0, 0);
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.EditNote__Title--error,
+.EditNote__Text--error {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: rgb(255, 0, 0);
+  opacity: 1;
+  transition: opacity 0.1s step-end;
+  user-select: none;
+}
+
+.EditNote__Title--error p,
+.EditNote__Text--error p,
+.EditNote__Title--noError p,
+.EditNote__Text--noError p {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: red;
+  position: absolute;
+  text-wrap: nowrap;
+  margin-left: -8.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.--error {
+  border-color: red;
+}
+
+@media only screen and (max-width: 600px) {
+  .EditNote__Text {
+    width: 75dvw;
+  }
+  .EditNote__Text textarea {
+    width: 90%;
+  }
+}
